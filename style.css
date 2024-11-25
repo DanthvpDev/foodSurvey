@@ -1,10 +1,12 @@
 .errorAnimation {
-    animation: error 5s all ease-in-out;
+    transition: all 7s ease-in-out;
+    animation: 4s popUp;
 }
 
 
-@keyframes error {
-    0% {opacity: 0;}
-    80% {opacity: 1;}
-    100% {opacity: 0;}
+@keyframes popUp {
+    0% {opacity: .3; bottom: 0rem; background-color: rgba(117, 143, 25, 0.712);}
+    20% {opacity: 1; bottom: 5rem;}
+    90% {opacity: 1; bottom: 5rem;}
+    100% {opacity: .3; bottom: -25rem;}
 }

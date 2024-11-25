@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QCast Encuesta</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 </head>
 
 <body class="bg-[#ECEFF1]">
     <header>
         <section class="flex flex-col justify-center items-center text-center">
             <picture class="inline-block sm:w-2/4 md:w-3/12">
-                <img src="/media/img/qcast_logo.png" alt="">
+                <img src="../media/img/qcast_logo.png" alt="">
             </picture>
             <h1 class="text-3xl font-semibold pb-16 text-[#42a3c3]">Conecta tus respuestas, comparte tu mundo</h1>
         </section>
@@ -73,30 +74,30 @@
                     <section class="flex-wrap gap-y-3 py-6 bg-[#42c392] rounded-lg shadow-lg px-4 hidden">
                         <p class="w-full text-center pb-2 text-xl font-semibold border-b border-blue-200">¿Cuál es su comida favorita?</p>
                         <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
-                            <input type="radio" name="comida" id="pizza" /> 
+                            <input type="radio" name="comida" id="pizza" value="pizza"/> 
                             <label for="pizza" class="text-lg">Pizza</label>
                         </div>
                         <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
-                            <input type="radio" name="comida" id="hamburguesa" />
+                            <input type="radio" name="comida" id="hamburguesa" value="hamburguesa"/>
                             <label for="hamburguesa" class="text-lg">Hamburguesa</label>
                         </div>
                         <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
-                            <input type="radio" name="comida" id="papasFritas" />
+                            <input type="radio" name="comida" id="papasFritas" value="papas fritas"/>
                             <label for="papasFritas" class="text-lg">Papas Fritas</label>
                         </div>
-                        <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
-                            <input type="radio" name="comida" id="ninugna" />
+                        <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3">
+                            <input type="radio" name="comida" id="ninugna" value="ninguna" />
                             <label for="ninugna" class="text-lg">Ninguna de las anteriores</label>
                         </div>
                     </section>
                     <section class="flex-wrap gap-y-3 py-6 bg-[#42c392] rounded-lg shadow-lg hidden">
                         <p class="w-full text-center pb-2 text-xl font-semibold border-b border-blue-200">Le gusta ir al cine</p>
                         <div class="flex md:w-1/2 w-full items-center justify-center gap-x-3 flex-wrap">
-                            <input type="radio" name="Cine" id="siCine" />
+                            <input type="radio" name="Cine" id="siCine" value="si"/>
                             <label for="siCine" class="text-lg">Sí</label>
                         </div>
                         <div class="flex md:w-1/2 w-full items-center justify-center gap-x-3 ">
-                            <input type="radio" name="Cine" id="noCine" />
+                            <input type="radio" name="Cine" id="noCine" value="no"/>
                             <label for="noCine" class="text-lg">No</label>
                         </div>
                     </section>
@@ -113,8 +114,9 @@
             </article>
         </section>
 
-        <article id="cajaError" class="border border-solid w-4/12 h-32 rounded-lg absolute translate-x-full hidden opacity-1">
-            <p id="parrafoError" class="text-[#ECEFF1] text-xl"></p>
+        <article id="cajaError" class="border border-solid w-10/12 lg:w-5/12 py-5 rounded-lg absolute  opacity-0 left-[9%] lg:left-[30%]  -bottom-20 text-lg text-center">
+            <i id="errorIcon" class="fa-solid text-[#e9e9e9] text-3xl"></i>
+            <p id="parrafoError" class="text-[#ECEFF1] text-xl w-full text-center text-balance"></p>
         </article>
     </main>
     <script src="main.js"></script>
