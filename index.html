@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-[#ECEFF1]">
+    <header>
+        <section class="flex flex-col justify-center items-center text-center">
+            <picture class="inline-block sm:w-2/4 md:w-3/12">
+                <img src="/media/img/qcast_logo.png" alt="">
+            </picture>
+            <h1 class="text-3xl font-semibold pb-16 text-[#42a3c3]">Conecta tus respuestas, comparte tu mundo</h1>
+        </section>
+    </header>
+    <main class="relative">
+        <section>
+            <article class="bg-[url('https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')] bg-no-repeat bg-cover bg-center text-[#ECEFF1] py-28 relative
+            before:content-[''] before:absolute before:h-full before:w-full before:top-0 before:left-0 before:bg-[#1d25368e] before:-z-0">
+                <p class="md:w-8/12 w-11/12 text-balance mx-auto text-xl text-center p-10 z-10
+                bg-[#29c9ff83] rounded-lg shadow-lg backdrop-blur-[2.1px]">Esta encuesta tiene como objetivo principal recopilar información clave para mejorar la
+                    personalización de
+                    sugerencias en áreas de <strong>entretenimiento</strong> y <strong>alimentación</strong>. A través
+                    de
+                    tus
+                    respuestas, ayudamos a optimizar las recomendaciones de anuncios y promociones, garantizando que se
+                    adapten a tus
+                    preferencias. Además, los datos recopilados serán utilizados para entrenar una inteligencia
+                    artificial
+                    avanzada que
+                    operará en cadenas de cine, permitiendo ofrecer <strong>promociones exclusivas</strong> y
+                    <strong>experiencias más relevantes</strong> para los usuarios, transformando la forma en que
+                    interactúas con el mundo del
+                    entretenimiento. ¡Tu opinión es el motor de esta innovación!
+                </p>
+            </article>
+        </section>
+        <section class="pt-8 pb-20">
+            <article class="flex flex-col items-center">
+
+                <h2 class="text-[#42a3c3] font-semibold text-4xl py-10">Encuesta</h2>
+
+                <form action="" class="lg:w-8/12 w-11/12 rounded-3xl flex flex-col gap-8 text-[#ECEFF1]">
+                    <section class="flex gap-x-4 py-6 bg-[#42c392] rounded-lg justify-center shadow-lg">
+                        <label for="edad" class="text-xl">Ingrese su edad</label>
+                        <input type="number" id="edad" name="edad" min="10" max="75" class="outline-1 outline outline-[#2c86a4] rounded-lg text-[#e9e9e9] bg-[#c7fff53f] text-xl transition-colors font-semibold text-center hover:bg-[#83c2b6ad] hover:transition-colors"/>
+                    </section>
+                    <section class="flex-wrap gap-y-3 py-6 bg-[#42c392] rounded-lg shadow-lg hidden">
+                        <p class="w-full text-center pb-2 text-xl font-semibold border-b border-blue-200">¿Cuál es su bebida favorita?</p>
+                        <div class="flex md:w-1/4 w-full justify-center gap-x-3 flex-wrap">
+                            <input type="radio" id="gaseosa" value="gaseosa" name="bebida" />
+                            <label for="gaseosa" class="text-lg">Gaseosa</label>
+                        </div>
+                        <div class="flex md:w-1/4 w-full justify-center gap-x-3 flex-wrap">
+                            <input type="radio" id="te" value="te" name="bebida" />
+                            <label for="te" class="text-lg">Té</label>
+                        </div>
+                        <div class="flex md:w-1/4 w-full justify-center gap-x-3 flex-wrap">
+                            <input type="radio" id="agua" value="agua" name="bebida" />
+                            <label for="agua" class="text-lg">Agua</label>
+                        </div>
+                        <div class="flex md:w-1/4 w-full justify-center gap-x-3 flex-wrap">
+                            <input type="radio" id="cafe" value="cafe" name="bebida" />
+                            <label for="cafe" class="text-lg">Cafe</label>
+                        </div>
+                    </section>
+
+                    <section class="flex-wrap gap-y-3 py-6 bg-[#42c392] rounded-lg shadow-lg px-4 hidden">
+                        <p class="w-full text-center pb-2 text-xl font-semibold border-b border-blue-200">¿Cuál es su comida favorita?</p>
+                        <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
+                            <input type="radio" name="comida" id="pizza" /> 
+                            <label for="pizza" class="text-lg">Pizza</label>
+                        </div>
+                        <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
+                            <input type="radio" name="comida" id="hamburguesa" />
+                            <label for="hamburguesa" class="text-lg">Hamburguesa</label>
+                        </div>
+                        <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
+                            <input type="radio" name="comida" id="papasFritas" />
+                            <label for="papasFritas" class="text-lg">Papas Fritas</label>
+                        </div>
+                        <div class="flex md:w-3/12 w-full items-center justify-center gap-x-3 flex-wrap">
+                            <input type="radio" name="comida" id="ninugna" />
+                            <label for="ninugna" class="text-lg">Ninguna de las anteriores</label>
+                        </div>
+                    </section>
+                    <section class="flex-wrap gap-y-3 py-6 bg-[#42c392] rounded-lg shadow-lg hidden">
+                        <p class="w-full text-center pb-2 text-xl font-semibold border-b border-blue-200">Le gusta ir al cine</p>
+                        <div class="flex md:w-1/2 w-full items-center justify-center gap-x-3 flex-wrap">
+                            <input type="radio" name="Cine" id="siCine" />
+                            <label for="siCine" class="text-lg">Sí</label>
+                        </div>
+                        <div class="flex md:w-1/2 w-full items-center justify-center gap-x-3 ">
+                            <input type="radio" name="Cine" id="noCine" />
+                            <label for="noCine" class="text-lg">No</label>
+                        </div>
+                    </section>
+                    <button id="btnEnviar" type="button" class="hidden w-24 bg-[#42a3c3] py-3 text-lg font-semibold rounded-lg mx-auto transition-colors justify-center
+                                                hover:bg-[#3ebae4] hover:shadow-lg hover:shadow-[#8ddbf5] hover:transition-colors">
+                        Enviar
+                    </button>
+                    
+                    <button id="btnVerificar" type="button" class="w-24 bg-[#42a3c3] py-3 text-lg font-semibold rounded-lg mx-auto transition-colors
+                    hover:bg-[#3ebae4] hover:shadow-lg hover:shadow-[#8ddbf5] hover:transition-colors">
+                        Verificar
+                    </button>
+                </form>
+            </article>
+        </section>
+
+        <article id="cajaError" class="border border-solid w-4/12 h-32 rounded-lg absolute translate-x-full hidden opacity-1">
+            <p id="parrafoError" class="text-[#ECEFF1] text-xl"></p>
+        </article>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
